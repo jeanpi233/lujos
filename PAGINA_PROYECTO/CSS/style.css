@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: rgb(255, 255, 255);
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+    text-transform: capitalize;
+}
+.section1 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5px;
+    min-height: 10px;
+}
+.section1 p {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.logo img {
+    margin-left: 30px ;
+    font-size: 2.2rem;
+    width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 200px; /* Mantén la proporción del logo */
+}
+
+.menu {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 24px;
+}
+.menu .li {
+    margin: 24px;
+    display: inline-block;
+
+}
+.menu .li a{
+    border: 1px solid rgb(104, 89, 89);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 16px;
+    color: rgb(0, 0, 0);
+    &:hover{
+        color: rgb(191, 191, 197);
+        transform: scale(1.1);
+    }
+}
+.encabezado {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px 5px;
+    min-height: 250px;
+}
+.encabezado .logo {
+    display: inline-block;
+}
+.menu .li2 {
+    margin: 2.4rem;
+    display: inline-block;
+}
+.menu .li2 a{
+    padding: 5px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 16px;
+    color: rgb(255, 255, 255);
+    &:hover{
+        color: rgb(191, 191, 197);
+        transform: scale(1.1);
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    height: 250px;
+}
+.main p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    align-self: center;
+}
+.main img {
+    height: 230px;
+}
+
+.tarjetas{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.tarjetas .card{
+    margin: 50px;
+    background-color: #b6b6b6;
+    width: 400px;
+    height: auto;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(1, 75, 97);
+    &:hover{
+        color: antiquewhite;
+        background-color: azure;
+        transform: scale(1.1);
+    }
+
+}
+
+.tarjetas .card .contenido img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+.tarjetas .card .contenido .nombre{
+    text-align: center;
+    color:rgb(0, 0, 0)    ;
+    border-bottom: 2px dotted rgb(1, 1, 1);
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+/* es el foooter*/
+
+.container{
+    max-width: 1200px;
+  margin: 0 auto;
+}
+.footer{
+    background-color: black;
+    padding: 80px 0 ;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-link h4{
+   font-size: 20px;
+   color:  #ffffff;
+   margin-bottom: 25px;
+   font-weight: 500;
+   border-bottom:  2px solid #00c3ff;
+   padding-bottom: 10px;
+   display: inline-block;
+}
+.footer-link ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-link ul li a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+.social-link ul li{
+    display: inline-block;
+}
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+    
+}
+.social-link a:hover{
+    background-color: #00c3ff;
+}
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    .footer-link{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
